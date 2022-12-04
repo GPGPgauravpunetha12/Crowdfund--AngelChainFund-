@@ -11,8 +11,6 @@ const Header = () => {
       <title>Angel_ChainFund</title>
       <meta property="og:title" content="Angel_ChainFund" key="title"  href="images/favicon.ico"/>
     </Head>
-   
-
     <HeaderWrapper>
       <HeaderLogo/>
       <HeaderNav/>
@@ -24,8 +22,9 @@ const Header = () => {
 const HeaderWrapper= styled.div`
 width:100%;
 height:70px;
-background: rgba(0,0,0,0.4);
+
 display:flex; 
 justify-content:space-between;
-align-items:center;`
+align-items:center;
+position:absolute;`
 export default Header 

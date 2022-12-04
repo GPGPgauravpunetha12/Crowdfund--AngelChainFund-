@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import FilterAltIcon from '@mui/icons-material/FilterAlt';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import PaidIcon from '@mui/icons-material/Paid';
 import EventIcon from '@mui/icons-material/Event';
@@ -49,6 +48,9 @@ export default function Dashboard() {
   return (
     <HomeWrapper>
 
+<ProjectWrap>
+   
+   <Titlee>Donate Now</Titlee> </ProjectWrap>
       {/* Cards Container */}
       <CardsWrapper>
 
@@ -110,7 +112,6 @@ const Card = styled.div`
   width: 30%;
   margin-top: 20px;
   background-color: ${(props) => props.theme.bgDiv};
-
   &:hover{
     transform: translateY(-10px);
     transition: transform 0.5s;
@@ -165,4 +166,40 @@ const Button = styled.button`
   color: #fff;
   font-size: 14px;
   font-weight: bold;
+`
+
+// first imaage Component----------------------
+const Titlee = styled.h2`
+    width: 557px;
+    height: 75px;
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 62px;
+    line-height: 75px;
+    /* identical to box height */
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+   
+    flex-grow: 0;
+`
+const ProjectWrap = styled.div`
+display:flex;
+align-items:center;
+text-align:center;
+justify content: center;
+z-index:0;
+height:50%;
+width:100%!important;
+display: flex;
+flex-direction: column;
+padding: 0px 43px;
+gap: 38px;
+position: relative;
+width: 1442px;
+height: 348px;
+left: -1px;
+top: 0px;
+background: rgba(254, 73, 17, 0.88);
 `
