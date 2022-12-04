@@ -25,7 +25,7 @@ justify-content:center;
 align-items:center;
 margin-right: 15px;
 height:50%;
-
+z-index:1;
 `
 const  ThemeToggle=styled.div`
 display:flex;
@@ -37,5 +37,6 @@ padding:5px;
 width:45px;
 border-radius:12px;
 cursor:pointer;
+z-index:1;
 `
 export default HeaderRight

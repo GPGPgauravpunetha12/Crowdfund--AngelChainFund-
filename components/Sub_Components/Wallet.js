@@ -67,9 +67,11 @@ const ConnectWalletWrapper = styled.div`
   font-weight: bold;
   font-size: small;
   cursor: pointer;
+  z-index:1;
 `;
 
 const Address = styled.h2`
+z-index:1;
     background-color: ${(props) => props.theme.bgSubDiv};
     height: 100%;
     display: flex;
@@ -83,6 +85,7 @@ const Balance = styled.h2`
     display: flex;
     height: 100%;
     align-items: center;
+    z-index:1;
     justify-content: center;
     margin-right: 5px;
 `

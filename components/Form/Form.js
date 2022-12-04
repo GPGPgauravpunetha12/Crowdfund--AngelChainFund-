@@ -6,7 +6,7 @@ import {TailSpin} from 'react-loader-spinner';
 import {ethers} from 'ethers';
 import {toast} from 'react-toastify';
 import CampaignFactory from '../../artifacts/contracts/Campaign.sol/CampaignFactory.json'
-
+import Link from 'next/link';
 const FormState = createContext();
 
 const Form = () => {
@@ -78,6 +78,10 @@ const Form = () => {
 
   return (
       <FormState.Provider value={{form, setForm, image, setImage, ImageHandler, FormHandler, setImageUrl, setStoryUrl, startCampaign, setUploaded}} >
+       <ProjectWrap>
+   
+   <Titlee>Create your Campaign</Titlee> </ProjectWrap>
+
     <FormWrapper>
         <FormMain>
             {loading == true ?
@@ -88,7 +92,7 @@ const Form = () => {
                 <Address>
                     <h1>Campagin Started Sucessfully!</h1>
                     <h1>{address}</h1>
-                    <Link passHref href={'/' + e.address}>
+                    <Link passHref href={'/project' + e.address}>
                           <Button >
                         Go To Campaign
                     </Button></Link>
@@ -153,6 +157,42 @@ const Button = styled.button`
   cursor: pointer;
   font-weight:bold ;
   font-size:large ;
+`
+// first imaage Component----------------------
+const Titlee = styled.h2`
+    width: 557px;
+    height: 75px;
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 62px;
+    line-height: 75px;
+    /* identical to box height */
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+   
+    flex-grow: 0;
+
+`
+const ProjectWrap = styled.div`
+display:flex;
+align-items:center;
+text-align:center;
+justify content: center;
+z-index:0;
+height:50%;
+width:100%!important;
+display: flex;
+flex-direction: column;
+padding: 0px 43px;
+gap: 38px;
+position: relative;
+width: 1442px;
+height: 348px;
+left: -1px;
+top: 0px;
+background: rgba(254, 73, 17, 0.88);
 `
 
 export default Form;
