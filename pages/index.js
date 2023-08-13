@@ -112,7 +112,7 @@ export default function Index({
       <Foundation>
         <Ribone_one></Ribone_one>
         <Ribone_two></Ribone_two>
-        <Ribone_three></Ribone_three>
+        // <Ribone_three></Ribone_three>
         <Ribone_four></Ribone_four>
         <Ribone_five></Ribone_five>
         <Ribone_six></Ribone_six>
@@ -671,8 +671,8 @@ const Description = styled.p`
 const ReadMore = styled.div`
 top: 577px;
 position: absolute;
-width: 78px;
-height: 19px;
+width: 81px;
+height: 25px;
 right: 431px;
 border-bottom: 1px solid #FE4911;
 padding: 0 0 4px;
