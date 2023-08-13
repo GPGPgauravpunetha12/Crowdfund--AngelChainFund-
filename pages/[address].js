@@ -219,6 +219,7 @@ const DetailWrapper = styled.div`
   justify-content: space-between;
   padding: 20px;
   width: 98%;
+  position:relative;
   top:5rem;
 `;
 const LeftContainer = styled.div`
