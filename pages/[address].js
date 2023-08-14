@@ -556,7 +556,7 @@ const DetailWrapper = styled.div`
   padding: 20px;
   width: 98%;
   position:relative;
-  top:5rem;
+  top:6rem;
 `;
 const LeftContainer = styled.div`
   width: 45%;
