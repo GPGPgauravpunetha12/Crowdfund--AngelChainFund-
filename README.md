@@ -1,3 +1,4 @@
+[Crowdfunding_Project_Ppt_G72_phase_3.pptx](https://github.com/user-attachments/files/27065969/Crowdfunding_Project_Ppt_G72_phase_3.pptx)
 Created a blockchain website 
 to solve real world Problems that are now days occuring in many social crowdfunding company some are donating but they dont know where there money is circulating so we provide transparency by building the platform
 
